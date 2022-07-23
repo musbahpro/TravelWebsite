@@ -1,0 +1,23 @@
+/*=============== variables =================*/
+:root {
+  --blur: #0101a3;
+  --bink: #c92fd9;
+  --white: #fff;
+  --grd: linear-gradient(#0101a3, #00004e);
+  --font: "Bebas Neue", cursive;
+  --texfo: "Inter", sans-serif;
+  --trns: 0.4s all;
+}
+/*  header ========================================================================== */
+.nav_bar {
+  background: url("../images/topef.png");
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.ul_list .list {
+  display: inline;
+}
+.logo img {
+  width: 100px;
+}
