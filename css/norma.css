@@ -7,13 +7,31 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-
+:root {
+  --yelo: #deb37e;
+  --grin: #60858e;
+  --tex_color :#10323c;
+  --white: #fff;
+  --font: "Edu TAS Beginner", cursive;
+  --texfo: "Edu SA Beginner", cursive;
+  --trns: 0.4s all;
+}
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 a{
   text-decoration: none;
+  color: var(--tex_color);
+    transition: var(--trns);
+  -webkit-transition: var(--trns);
+  -moz-transition: var(--trns);
+  -ms-transition: var(--trns);
+  -o-transition: var(--trns);
+}
+a:hover{
+  color: var(--yelo);
+   text-shadow: 2px 1px var(--grin);
 }
 li{
   list-style: none;
@@ -53,6 +71,11 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: var(--trns);
+  -webkit-transition: var(--trns);
+  -moz-transition: var(--trns);
+  -ms-transition: var(--trns);
+  -o-transition: var(--trns);
 }
 
 /**

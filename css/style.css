@@ -1,23 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500;600;700&display=swap");
 /*=============== variables =================*/
 :root {
-  --blur: #0101a3;
-  --bink: #c92fd9;
+  --yelo: #deb37e;
+  --grin: #60858e;
+  --tex_color: #10323c;
   --white: #fff;
-  --grd: linear-gradient(#0101a3, #00004e);
-  --font: "Bebas Neue", cursive;
-  --texfo: "Inter", sans-serif;
+  --font: "Edu TAS Beginner", cursive;
+  --texfo: "Edu SA Beginner", cursive;
   --trns: 0.4s all;
 }
 /*  header ========================================================================== */
 .nav_bar {
-  background: url("../images/topef.png");
-  width: 100%;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
-.ul_list .list {
-  display: inline;
+.ul_list {
+  display: flex;
+  font-family: var(--font);
+  font-size: 1.25rem;
+  font-weight: 500;
 }
+
 .logo img {
-  width: 100px;
+  width: 80px;
+  padding: 10px;
 }
+header {
+  background-image: url(../images/bacgrond.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+}
+.hed_tex {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.hed_tex h1 {
+  font-family: var(--texfo);
+  font-size: 2.7rem;
+  color: var(--yelo);
+  text-shadow: 2px 1px var(--grin);
+}
+.hed_tex p {
+  font-family: var(--font);
+  color: var(--tex_color);
+  font-size: 1.3rem;
+  margin: auto;
+  width: 70%;
+}
+  
+.min_btn{
+    outline: none;
+    border: none;
+    font-size: 1.4rem;
+    background-color: var(--grin);
+    color: var(--yelo);
+    width: 130px;
+    height: 40px;
+    margin-top: 20px;
+    font-family: var(--font);
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 4px 0px 4px 0px;
+    -webkit-border-radius: 4px 0px 4px 0px;
+    -moz-border-radius: 4px 0px 4px 0px;
+    -ms-border-radius: 4px 0px 4px 0px;
+    -o-border-radius: 4px 0px 4px 0px;
+}
+/*  header ========================================================================== */
