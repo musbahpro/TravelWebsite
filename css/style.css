@@ -10,6 +10,11 @@
   --texfo: "Edu SA Beginner", cursive;
   --trns: 0.4s all;
 }
+::selection{
+  background-color: var(--tex_color);
+  color: var(--yelo);
+}
+
 /*  header ========================================================================== */
 .nav_bar {
   display: flex;
@@ -22,7 +27,11 @@
   font-size: 1.25rem;
   font-weight: 500;
 }
-
+@media (max-width: 768px){
+  .ul_list{
+    font-size: 1.2rem;
+  }
+}
 .logo img {
   width: 80px;
   padding: 10px;
@@ -139,15 +148,15 @@ header {
   -ms-border-radius: 20px 0px 20px 0px;
   -o-border-radius: 20px 0px 20px 0px;
 }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .Menu_scr {
-    margin-left: 50px !important;
+    margin-left: 80px ;
   }
 }
 /*  Our Story ========================================================================== */
 .Our_Story {
   width: 100%;
-  min-height: 40vh;
+  min-height: 50vh;
   position: relative;
   text-align: center;
   background-color: #deb37e53;
@@ -286,7 +295,6 @@ button {
 }
 .email button {
   width: 150px;
-
   height: 58px;
   margin-left: -50px;
   background-color: var(--tex_color);
@@ -300,6 +308,12 @@ button {
 .email button:hover {
   background-color: #264e5a;
 }
+@media (max-width: 768px) {
+  .email button {
+    margin-top: 20px !important;
+    margin: auto;
+  }
+}
 /*  footer ========================================================================== */
 
 .footer {
@@ -309,4 +323,36 @@ button {
   overflow: hidden;
   padding-bottom: 50px;
   border-bottom:30px solid var(--tex_color);
+}
+.footer_scr{
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap:wrap ;
+}
+.footer_tex{
+  width: 50%;
+  font-family: var(--font);
+  color: var(--tex_color);
+}
+.sochel i{
+  color: var(--tex_color);
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+.footer_list
+,.Copyright {
+    font-family: var(--font);
+  color: var(--tex_color);
+}
+@media (max-width: 768px) {
+.footer_list
+,.Copyright,
+.footer_tex {
+  width: 100%;
+  text-align: center;
+}
+.Copyright{
+  padding-left: 50px;
+}
 }
