@@ -58,23 +58,64 @@ header {
   margin: auto;
   width: 70%;
 }
-  
-.min_btn{
-    outline: none;
-    border: none;
-    font-size: 1.4rem;
-    background-color: var(--grin);
-    color: var(--yelo);
-    width: 130px;
-    height: 40px;
-    margin-top: 20px;
-    font-family: var(--font);
-    cursor: pointer;
-    font-weight: 600;
-    border-radius: 4px 0px 4px 0px;
-    -webkit-border-radius: 4px 0px 4px 0px;
-    -moz-border-radius: 4px 0px 4px 0px;
-    -ms-border-radius: 4px 0px 4px 0px;
-    -o-border-radius: 4px 0px 4px 0px;
+
+.min_btn {
+  outline: none;
+  border: none;
+  font-size: 1.4rem;
+  background-color: var(--grin);
+  color: var(--yelo);
+  width: 130px;
+  height: 40px;
+  margin-top: 20px;
+  font-family: var(--font);
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 4px 0px 4px 0px;
+  -webkit-border-radius: 4px 0px 4px 0px;
+  -moz-border-radius: 4px 0px 4px 0px;
+  -ms-border-radius: 4px 0px 4px 0px;
+  -o-border-radius: 4px 0px 4px 0px;
+  transition: var(--trns);
+  -webkit-transition: var(--trns);
+  -moz-transition: var(--trns);
+  -ms-transition: var(--trns);
+  -o-transition: var(--trns);
 }
-/*  header ========================================================================== */
+.min_btn:hover {
+  transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+}
+/*  Our Story ========================================================================== */
+.menu {
+  width: 100%;
+  min-height: 50vh;
+  background-image: url(../images/about.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 50px;
+}
+.Menu_scr {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+.munu_tex {
+  margin: 0;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.munu_tex .min_tex {
+  margin: 0;
+  font-family: var(--texfo);
+  text-transform: uppercase;
+  color: var(--tex_color);
+}
+.munu_tex p {
+  color: var(--grin);
+  font-size: 1.2rem;
+  font-family: var(--texfo);
+}
