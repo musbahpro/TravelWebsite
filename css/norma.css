@@ -36,6 +36,7 @@ a:hover{
 li{
   list-style: none;
   padding: 10px;
+  font-size: 1.5rem;
 }
 
 h1{

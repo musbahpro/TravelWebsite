@@ -89,7 +89,7 @@ header {
   -ms-transform: scale(1.1, 1.1);
   -o-transform: scale(1.1, 1.1);
 }
-/*  Our Story ========================================================================== */
+/*  menu ========================================================================== */
 .menu {
   width: 100%;
   min-height: 50vh;
@@ -101,6 +101,8 @@ header {
 .Menu_scr {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  align-items: center;
+  gap: 50px;
 }
 .munu_tex {
   margin: 0;
@@ -113,9 +115,59 @@ header {
   font-family: var(--texfo);
   text-transform: uppercase;
   color: var(--tex_color);
+  font-size: 3rem;
 }
 .munu_tex p {
   color: var(--grin);
   font-size: 1.2rem;
   font-family: var(--texfo);
+}
+.card_tex {
+  font-family: var(--texfo);
+  color: var(--tex_color);
+}
+.card_tex p {
+  width: 70%;
+}
+.card img {
+  border-radius: 20px 0px 20px 0px;
+  -webkit-border-radius: 20px 0px 20px 0px;
+  -moz-border-radius: 20px 0px 20px 0px;
+  -ms-border-radius: 20px 0px 20px 0px;
+  -o-border-radius: 20px 0px 20px 0px;
+}
+/*  Our Story ========================================================================== */
+.Our_Story {
+  width: 100%;
+  min-height: 40vh;
+  position: relative;
+  text-align: center;
+  background-color: #deb37e53;
+  overflow: hidden;
+}
+.Our_Story::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 30px;
+  background-image: url("../images/ouref.png");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.our_tex {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  font-family: var(--texfo);
+}
+
+.our_tex h1{
+  font-size: 3rem;
+  color: var(--grin);
+}
+.our_tex p{
+  color: var(--tex_color);
 }
