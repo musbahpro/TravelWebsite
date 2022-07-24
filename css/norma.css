@@ -64,7 +64,7 @@ h1{
 /* Large */
 @media (min-width: 1200px) {
   .container {
-    width: 1500px;
+    width: 1200px;
   }
 }
 

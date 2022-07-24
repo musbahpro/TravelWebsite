@@ -63,9 +63,9 @@ header {
   outline: none;
   border: none;
   font-size: 1.4rem;
-  background-color: var(--grin);
+  background-color: var(--tex_color);
   color: var(--yelo);
-  width: 130px;
+  width: 150px;
   height: 40px;
   margin-top: 20px;
   font-family: var(--font);
@@ -100,9 +100,12 @@ header {
 }
 .Menu_scr {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   align-items: center;
   gap: 50px;
+}
+.card {
+  width: 380px;
 }
 .munu_tex {
   margin: 0;
@@ -136,6 +139,11 @@ header {
   -ms-border-radius: 20px 0px 20px 0px;
   -o-border-radius: 20px 0px 20px 0px;
 }
+@media (min-width: 768px) {
+  .Menu_scr {
+    margin-left: 50px !important;
+  }
+}
 /*  Our Story ========================================================================== */
 .Our_Story {
   width: 100%;
@@ -145,7 +153,7 @@ header {
   background-color: #deb37e53;
   overflow: hidden;
 }
-.Our_Story::after{
+.Our_Story::after {
   content: "";
   position: absolute;
   left: 0;
@@ -164,10 +172,141 @@ header {
   font-family: var(--texfo);
 }
 
-.our_tex h1{
+.our_tex h1 {
   font-size: 3rem;
   color: var(--grin);
 }
-.our_tex p{
+.our_tex p {
   color: var(--tex_color);
+}
+/*  Our Story ========================================================================== */
+.Offers {
+  width: 100%;
+  min-height: 75vh;
+  background-image: url(../images/about.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 50px;
+}
+.Offers_scr {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+.offer_card {
+  position: relative;
+  width: 350px;
+  background-color: #60858e;
+  height: 550px;
+  font-family: var(--texfo);
+  color: var(--yelo);
+  border-radius: 0px 220px 0px 220px;
+  -webkit-border-radius: 0px 220px 0px 220px;
+  -moz-border-radius: 0px 220px 0px 220px;
+  -ms-border-radius: 0px 220px 0px 220px;
+  -o-border-radius: 0px 220px 0px 220px;
+}
+.offer_card h1 {
+  font-size: 2rem;
+  margin-bottom: 6px;
+  text-align: left;
+  padding-left: 15px;
+  color: var(--tex_color);
+}
+.seler {
+  background-color: var(--tex_color);
+  width: 180px;
+  height: 50px;
+  text-align: center;
+  margin-left: -60px;
+  font-size: 1.6rem;
+  border-radius: 0px 100px 0px 100px;
+  margin-top: 10px;
+}
+h3 {
+  margin: 0;
+  padding-top: 6px;
+}
+
+.offer_card p i {
+  color: var(--tex_color);
+  font-size: 1.6rem;
+}
+.offer_card p {
+  font-size: 1.6rem;
+}
+.optin {
+  padding-left: 30px;
+}
+.selbtn {
+  background-color: var(--tex_color);
+  bottom: 10px;
+  right: 0px;
+  position: absolute;
+}
+/*  email ========================================================================== */
+.email {
+  width: 100%;
+  min-height: 50vh;
+  position: relative;
+  text-align: center;
+  background-color: #deb37e53;
+  overflow: hidden;
+  padding-bottom: 50px;
+}
+.email::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0px;
+  background-image: url("../images/ouref.png");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.email input {
+  width: 400px;
+  height: 40px;
+}
+.email input,
+button {
+  outline: none;
+  border: none;
+  padding: 10px;
+  text-transform: capitalize;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  font-family: var(--texfo);
+  -o-border-radius: 30px;
+}
+.email button {
+  width: 150px;
+
+  height: 58px;
+  margin-left: -50px;
+  background-color: var(--tex_color);
+  color: var(--yelo);
+  transition: var(--trns);
+  -webkit-transition: var(--trns);
+  -moz-transition: var(--trns);
+  -ms-transition: var(--trns);
+  -o-transition: var(--trns);
+}
+.email button:hover {
+  background-color: #264e5a;
+}
+/*  footer ========================================================================== */
+
+.footer {
+  width: 100%;
+  min-height: 30vh;
+  background-color: #deb37e53;
+  overflow: hidden;
+  padding-bottom: 50px;
+  border-bottom:30px solid var(--tex_color);
 }
